@@ -143,10 +143,13 @@
 
 \newcommand{\pindent}{\hspace*{\manualparindent}} % 手動で入れるインデント
 
-\title{Beyond of diversification}
+\title{Beyond of diversification/ Module 3}
 \date{2026/1/1}
 
 \begin{document}
+\maketitle
+
+\section{Limits of diversification}
 The benefit of the diversification is to eliminate the idiosyncratic risks.
 However, there is a limit of diversification.
 
@@ -158,6 +161,79 @@ The hedging is the only effective against the downside risk, which means that th
 However, in terms of the insurance, we need to consider the upside risk as well as the downside risk.
 Insurance is a kind of "Dynamic hedging", which means that we need to adjust the allocation of the assets accoding to the market situation.
 
+\section{An introduction to CPPI}
+The CPPI procedure allows for the construction of convex payoffs.
+
+This procedure dynamically allocates total assets to a risky asset and a safe asset.
+
+Let Floor(F) be the protection floor. This floor is the minimun of value that you can accept the loss.
+
+The Cushion(C) is given by
+\[\text{CPPI} - F\]
+and the potion of investment for the risky asset is given by
+\[\text{Multiplier(M)} \times C\]
+
+For example, $when M = 3$ and the floor is $80\%$, the initial investment in the risky asset is 
+\[3 \times (\$100 - \$80) = \$60\]
+
+However, if there is a gap between the trdable dates and the huge decline in the price happens within the period, it is impossible to adjust the portfolio.
+This is called as \textbf{Gap risk}.
+In other words, the loss of the risky asset relative to the safe asset exceeds $\frac{1}{M}$, 
+
+AT the same time, let's introduce the maximum drawdown constraint.
+
+The max drawdown constraint is 
+\[V_t > \alpha M_t\]
+where $V_t$ is the value of the portfolio at time $t$, 
+$M_t$ is the maximum value of the portfolio between time 0 and $t$
+and $\alpha$ is the maximum acceptable drawdown.
+
+The maximum drawdown flow is a continuously increasing function.
+
+The next extension is a perfomance CAP.
+
+Let $F_t$ be the Floor, $T_t$  be the threshold, $C_t$ be the CAP and $A_t$ be the value of the asset at the time $t$.
+
+Here, we should have a strategy below
+\[E_t = 
+\begin{cases}
+  &m(A_t - F_t) \quad F_t \leq A_t \leq T_t\\
+  &m(C_t - A_t) \quad T_t \leq A_t \leq C_t
+\end{cases}\]
+where $E_t$ is the equity.
+You just need to adjust your investment depending on the $A_t$.
+
+The threshold $T_t$ is given by
+\[T_t = \frac{F_t + C_t}{2}\]
+which is called as \textbf{Sommoth-pasting} condition.
+
+
+\section{Simulating asset returns with random walks}
+The return can be modelled as 
+\[\begin{cases}
+  \frac{d S_t}{S_t} = (r + \sigma \lambda) dt + \sigma dW_t\\
+  \frac{dB_t}{B_t} = rdt \iff B_t = B_0 e^{rt}
+\end{cases}\]
+where $S_t$ is the price of the stock, $B_t$ is the value of cash you hold, 
+$r$ is the risk-free rate, $\sigma$ is the volatility and $\lambda$ is the sharpe ratio.
+
+And the mean $\mu$ is given by
+\[\mu = r + \sigma \lambda\]  
+and the $W_t$ is the \textbf{Brownian Motion}.
+
+This Brownian Motion is a random walk in continuous time. This one is introduced by Louis Bachelier.
+
+In other words, the return process $S_t$ satisfies
+\[\frac{S_{t+dt}-S_t}{S_t} = (r+\sigma \lambda)dt + \sigma \sqrt{dt} \xi_t\]
+where $\xi_t \sim \mcal{N}(0,1)$
+
+\section{Monte Carlo Simulation}
+In general, every coefficient will change as time passes.By adding time r to each coefficient,
+\[\frac{dS_t}{S_t} = \left(r_t + \sqrt{V_t} \lambda_t^S\right)dt + \sqrt{V_t} dW_t^S\]
+
+For example, model can be like this:
+\[dr_t = a(b-r_t)d_t + \sigma_r dW_t^r\]
+\[dV_t = \alpha (\bar{V_t}-V_t)dt + \sigma_V \sqrt{V_t} dW_t^V\]
 
 
 \end{document}

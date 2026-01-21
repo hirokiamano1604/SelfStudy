@@ -1,53 +1,195 @@
-% LaTeX Notetaking Template for the 2019 Pan-Canadian Self-Organizing Conference on Machine Learning (PC-SOCMLx)
-% Template by David Madras, inspired by Meltem Atay's template for the 2018 SOCML
+\documentclass[a4paper, 11pt]{ltjsarticle}
+% --- 基本設定 ---
+% \usepackage{luatexja-fontspec} % lualatexで日本語フォント指定
+% Macのヒラギノフォントを指定 (存在しない場合は他のフォントに変更してください)
+% \setmainjfont[BoldFont={Hiragino Sans W6}, ItalicFont={Hiragino Mincho ProN W3}]{Hiragino Sans W3}
+% \setsansjfont[BoldFont={Hiragino Sans W6}]{Hiragino Sans W3}
+% \setmonojfont{Osaka－等幅} % Osakaフォントがない場合は他の等幅フォントを指定
 
-\documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage{enumitem}
-\usepackage{dsfont}
+% \usepackage[haranoaji]{luatexja-preset} % Harano Aji Fonts (Noto Fonts 由来) を使う場合
+\usepackage[hiragino-pro,deluxe]{luatexja-preset} % ヒラギノフォントを使う場合 (より詳細な設定)
 
-\title{Introduction to Portfolio Construction and Analysis with Python}
-\author{Hiroki Amano}
-\date{20251220}
+% \usepackage[T1]{fontenc} % LuaLaTeX + fontspecでは通常不要
+\usepackage{amsmath, amssymb, mathtools, amsthm} % 数式関連
+\usepackage{graphicx} % 画像挿入
+\usepackage{hyperref} % ハイパーリンク
+\usepackage{listings} % ソースコード表示
+\usepackage{enumitem} % リスト環境のカスタマイズ
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{romanbar}
+
+% --- Beamerテーマと配色 (記事形式では不要なため削除・コメントアウト) ---
+% \usetheme{Madrid}
+% \usecolortheme{default}
+
+% カスタムカラー (tcolorboxなどで使用するため残す)
+% \definecolor{myblue}{RGB}{0,110,180}
+% \definecolor{mygreen}{RGB}{0,150,100}
+% \definecolor{myorange}{RGB}{230,120,20}
+% \definecolor{mygray}{RGB}{240,240,240}
+
+% Beamerの配色を一部上書き (記事形式では不要なため削除・コメントアウト)
+% \setbeamercolor{palette primary}{bg=myblue,fg=white}
+% ... (他のsetbeamercolorも同様に削除) ...
+% \setbeamercolor{block body}{bg=mygray}
+
+% --- tcolorboxの設定 (スタイリッシュな囲み) ---
+\usepackage[most]{tcolorbox}
+
+%================================================================
+% 定理・定義・命題などのカスタムボックス環境
+%================================================================
+
+% --- 必要なパッケージ（プリアンブルにあることを確認）---
+% \usepackage{amsthm}
+% \usepackage{amssymb}
+% \usepackage[most]{tcolorbox}
+% \tcbuselibrary{theorems} % \newtcbtheorem を使うために必要
+
+
+% --- カスタムカラー定義 ---
+\definecolor{myblue}{RGB}{0,110,180}
+\definecolor{mygreen}{RGB}{0,150,100}
+\definecolor{myorange}{RGB}{230,120,20}
+\definecolor{mypurple}{RGB}{120, 80, 190}
+\definecolor{mycautionred}{RGB}{192,0,0}
+\definecolor{mycautionyellow}{RGB}{255,242,204}
+
+
+% --- 自動採番される環境の定義 ---
+
+% まず「定理」を基準として定義。番号はセクションごとにリセット
+\newtcbtheorem[number within=subsection]{mytheorem}{定理}{
+  breakable,
+  colback=mygreen!5!white,
+  colframe=mygreen!75!black,
+  colbacktitle=mygreen!75!black,
+  coltitle=white,
+  fonttitle=\bfseries
+}{thm}
+
+% 定義・命題・補題は、「定理」と同じ番号カウンターを共有する
+\newtcbtheorem[use counter from=mytheorem]{mydefinition}{定義}{
+  breakable,
+  colback=myblue!5!white,
+  colframe=myblue!75!black,
+  colbacktitle=myblue!75!black,
+  coltitle=white,
+  fonttitle=\bfseries
+}{def}
+
+\newtcbtheorem[use counter from=mytheorem]{myproposition}{命題}{
+  breakable,
+  colback=mypurple!5!white,
+  colframe=mypurple!75!black,
+  colbacktitle=mypurple!75!black,
+  coltitle=white,
+  fonttitle=\bfseries
+}{prop}
+
+\newtcbtheorem[use counter from=mytheorem]{mylemma}{補題}{
+  breakable,
+  width=0.9\textwidth,  % 幅を90%に
+  center,               % 中央揃え
+  colback=mygreen!5!white,
+  colframe=mygreen!75!black,
+  colbacktitle=mygreen!75!black,
+  coltitle=white,
+  fonttitle=\bfseries
+}{lem}
+
+
+% --- 手動でタイトルを指定する、または番号なしの環境 ---
+
+% 例題用のスタイル（番号やタイトルは手動で指定）
+\newtcolorbox{myexample}[2][]{
+  breakable,
+  colback=myorange!5!white,
+  colframe=myorange!75!black,
+  colbacktitle=myorange!75!black,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={例題: #2},
+  #1
+}
+
+% 注意書き用のスタイル（タイトルは「注意」で固定、番号なし）
+\newtcolorbox{mycaution}[1][]{
+  breakable,
+  colback=mycautionyellow,
+  colframe=mycautionred,
+  colbacktitle=mycautionred,
+  coltitle=white,
+  fonttitle=\bfseries,
+  title={注意},
+  #1
+}
+
+
+\newcommand{\bb}[1]{\mathbb{#1}}
+\newcommand{\mcal}[1]{\mathcal{#1}}
+\newcommand{\st}{\quad \text{s.t.} \quad}
+\newcommand{\prsp}{(\Omega, \mcal{F}, \bb{P})}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+% --- 段落インデント設定 ---
+\setlength{\parindent}{0pt} % デフォルトはインデントなし
+
+\newlength{\manualparindent}
+\setlength{\manualparindent}{1\zw} % ← ここが重要（1zw ではなく 1\zw）
+
+
+\newcommand{\pindent}{\hspace*{\manualparindent}} % 手動で入れるインデント
+
+\title{Introduction to Asset-Lianility Management}
+\date{2026/1/1}
 
 \begin{document}
-
 \maketitle
 
-\section{Brief Description of the Topic}
+\section{From Asset Management to Asset-Liability Management}
+There was a PENSION FUND CRISIS.
+The S\&P 500 DB Pension Plans fell enormouls between Dec 1999 and May 2003.
+At the Dex 1999, it had a net surplus of \$ 239 billion, and at the end of the period the surplus turned into a net deficit of \$ 252 billion.
+It was in the end of Tech bubble. NASDAQ index also declined grately in that period.
 
-\section{Summary of Discussion}
-\subsection{Major Point 1}
-\subsection{Major Point 2}
-\subsection{Major Point 3}
-$\dots$
-\subsection{Major Point $n$}
+The simmilar thing happend again in 2008.
 
-\section{Controversial or Confusing Points}
-\begin{itemize}
-    \item 1 + 1 = 3
-    \item etc.
-\end{itemize}{}
+In asset-liability management, the asset value against the liability value matters.
+In other words,
+\[F_t = \frac{A_t}{L_t}\]
+And surplus is given by a difference between assets and liability values:
+\[S_t = A_t - L_t\]
 
-\section{Open Questions}
-\begin{itemize}
-    \item Magnets, how do they work?
-    \item etc.
-\end{itemize}{}
+\section{Liability hedging portfolios}
+The investers concern mainly about an unexpected increase in the present value of thier liabilities.
 
-\section{Miscellaneous Notes}
-\begin{itemize}
-    \item random thoughts that don't fit elsewhere on this outline
-\end{itemize}{}
+A possible solution is called Liability-Hedging portfolios(LHR) or Goal-Hedging portfolio.
+There should be a certain cashflow that the liability will take, so that we need to try to make the similar cashflow by adjusting our portfolio.
 
-\section{Takeaways}
-\begin{itemize}
-    \item Summary points/major takeaways
-\end{itemize}{}
+With respect to the goal, a standard vond is not safe because it only makes a temporary huge cashflow in one period and the payoff of the bond change dramatically depending on the other factors.
+The portfolio should be like a retirement bond.
 
-\section{Further Reading or References}
-\begin{itemize}
-    \item Pointers to cool papers/resources everyone brought up
-\end{itemize}
+In reality, convinient bond which precisely fit the cashflow unlikely to exist so that we use \textbf{Duration Matching}.
+Since duration is the figure of sensitivity against inflation or interest rate change
 
+\section{Liability-driven investing (LDI)}
+In order to have a better performance, the one have to expose hisself in to the "Risk".
+The hedging is the method to control the risk appropriately to prepare for an unexpected shocks.
+Performance-seeking portfolio (PSP) and Liability Hedging Portfolio (LHR) are the one of the strategies which try to tame risk.
+
+The optimal allocation strategy is giben by
+\[\max_{w} \bb{E}\left[u\left(\frac{A_T}{L_T}\right)\right]\]
+\[\therefore w^* = \frac{\lambda_{\text{PSP}}}{\gamma \sigma_{\text{PSP}}}w^{\text{PSP}} + \beta_{\text{L, LHP}}(1- \frac{1}{\gamma})w^{\text{LHP}}\]
+where $A_T$ is an asset value, $L_T$ is a liability value and $u$ is an utility function
+
+In the LDI, they also have \textbf{Greeks}
+\begin{enumerate}
+    \item $\lambda_{\text{PSP}}$ is an sharpe ratio
+    \item $\beta_\text{LHP}$ is the beta, sensitivity, of liability
+    \item $\sigma_{\text{PSP}}$ is a volatility of the PSP strategy
+    \item $\gamma$ is a risk-aversion
+\end{enumerate}
 \end{document}

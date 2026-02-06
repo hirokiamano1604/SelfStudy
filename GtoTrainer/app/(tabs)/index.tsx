@@ -5,23 +5,19 @@ import {
   View,
   TouchableOpacity,
   Modal,
-  Image,
   Platform,
-  SafeAreaView // Webでもレイアウト崩れを防ぐため安全に使用
+  // Image, // ★画像コンポーネントは一旦使わない
 } from 'react-native';
 import { ALL_HAND_RANGES, PositionID, ActionType, RangeEntry } from '../../constants/pokerData';
 import { evaluateAction } from '../../utils/gameLogic';
 
 const POSITIONS: PositionID[] = ['UTG', 'EP', 'LJ', 'HJ', 'CO', 'BTN'];
-
-// 万が一データ読み込みに失敗した時のためのバックアップデータ
 const FALLBACK_HAND: RangeEntry = { hand: 'AA', rank: 'R_PURPLE' };
 
 export default function GtoTrainerScreen() {
   const [currentPosition, setCurrentPosition] = useState<PositionID>('UTG');
   
-  // ★重要修正: 初期値をnullにせず、データがあればその最初、なければバックアップを使用
-  // これにより「Loading...」画面自体を消滅させます。
+  // 初期化ロジック
   const [currentHandEntry, setCurrentHandEntry] = useState<RangeEntry>(() => {
     if (ALL_HAND_RANGES && ALL_HAND_RANGES.length > 0) {
       return ALL_HAND_RANGES[Math.floor(Math.random() * ALL_HAND_RANGES.length)];
@@ -29,26 +25,17 @@ export default function GtoTrainerScreen() {
     return FALLBACK_HAND;
   });
 
-  const [feedbackMessage, setFeedbackMessage] = useState<string>(' '); // 空白でスペース確保
+  const [feedbackMessage, setFeedbackMessage] = useState<string>(' ');
   const [isProcessing, setIsProcessing] = useState<boolean>(false);
   const [modalVisible, setModalVisible] = useState<boolean>(false);
   const [lastResultCorrect, setLastResultCorrect] = useState<boolean | null>(null);
-
-  // コンポーネントがマウントされた後にデータを再確認（念の為）
-  useEffect(() => {
-    if (!currentHandEntry) {
-      generateNewHand();
-    }
-  }, []);
 
   const generateNewHand = () => {
     if (ALL_HAND_RANGES && ALL_HAND_RANGES.length > 0) {
       const randomIndex = Math.floor(Math.random() * ALL_HAND_RANGES.length);
       setCurrentHandEntry(ALL_HAND_RANGES[randomIndex]);
     } else {
-      // データがない場合でもアプリを止めない
-      setCurrentHandEntry(FALLBACK_HAND); 
-      setFeedbackMessage('Error: Data missing');
+      setCurrentHandEntry(FALLBACK_HAND);
     }
     setFeedbackMessage(' ');
     setLastResultCorrect(null);
@@ -56,11 +43,14 @@ export default function GtoTrainerScreen() {
   };
 
   const handleAction = (action: ActionType) => {
-    if (isProcessing) return;
+    console.log(`Action Pressed: ${action}`); // ★F12コンソールで確認用
 
-    // データが存在しない場合のガード
+    if (isProcessing) {
+        console.log('Ignore: Processing in progress');
+        return;
+    }
+
     const rankToCheck = currentHandEntry ? currentHandEntry.rank : FALLBACK_HAND.rank;
-
     const result = evaluateAction(currentPosition, rankToCheck, action);
     
     setFeedbackMessage(result.message);
@@ -74,7 +64,6 @@ export default function GtoTrainerScreen() {
 
   const handleNext = () => generateNewHand();
 
-  // フィードバックテキストの色決定
   const getFeedbackColor = () => {
     if (lastResultCorrect === true) return '#4caf50';
     if (lastResultCorrect === false) return '#f44336';
@@ -98,6 +87,7 @@ export default function GtoTrainerScreen() {
             key={pos}
             style={[styles.posButton, currentPosition === pos && styles.posButtonSelected]}
             onPress={() => {
+              console.log(`Pos Changed: ${pos}`);
               setCurrentPosition(pos);
               generateNewHand();
             }}
@@ -111,7 +101,6 @@ export default function GtoTrainerScreen() {
 
       {/* Game Board */}
       <View style={styles.boardContainer}>
-        {/* ★ここから条件分岐を削除し、常にテキストを表示します */}
         <Text style={styles.handText}>
           {currentHandEntry ? currentHandEntry.hand : 'AA'}
         </Text>
@@ -140,7 +129,7 @@ export default function GtoTrainerScreen() {
         </View>
       </View>
 
-      {/* Chart Modal */}
+      {/* Modal - 画像なしテキストのみ版 */}
       <Modal
         visible={modalVisible}
         transparent={true}
@@ -149,13 +138,14 @@ export default function GtoTrainerScreen() {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
-            {/* 画像パスエラーで落ちるのを防ぐため、仮にテキストを表示、画像があれば画像を表示 */}
-            <Image 
-              source={require('../../assets/images/table.jpg')} 
-              style={styles.chartImage} 
-              resizeMode="contain"
-              // Webで画像がない場合にアプリを落とさないための記述（React Native Webのバージョンによる）
-            />
+            {/* 画像読み込みエラー回避のためテキストのみ表示 */}
+            <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+                <Text style={{color: '#fff', textAlign: 'center'}}>
+                    Chart Image is temporarily disabled.{'\n'}
+                    Check file path/name case sensitivity.
+                </Text>
+            </View>
+            
             <TouchableOpacity style={styles.closeButton} onPress={() => setModalVisible(false)}>
               <Text style={styles.closeButtonText}>Close</Text>
             </TouchableOpacity>
@@ -166,7 +156,6 @@ export default function GtoTrainerScreen() {
   );
 }
 
-// Button Helper
 const ActionBtn = ({ color, label, onPress }: { color: string, label: string, onPress: () => void }) => (
   <TouchableOpacity style={[styles.actionBtn, { backgroundColor: color }]} onPress={onPress}>
     <Text style={styles.actionBtnText}>{label}</Text>
@@ -204,11 +193,10 @@ const styles = StyleSheet.create({
   nextButtonText: { color: '#fff', fontSize: 16 },
   actionsContainer: { padding: 20, paddingBottom: 40 },
   actionsRow: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 15 },
-  actionBtn: { width: '48%', paddingVertical: 20, borderRadius: 12, alignItems: 'center' },
+  actionBtn: { width: '48%', paddingVertical: 20, borderRadius: 12, alignItems: 'center', cursor: 'pointer' }, // cursor pointer追加
   actionBtnText: { color: '#fff', fontSize: 20, fontWeight: 'bold' },
   modalContainer: { flex: 1, backgroundColor: 'rgba(0,0,0,0.9)', justifyContent: 'center', alignItems: 'center' },
   modalContent: { width: '90%', height: '80%', backgroundColor: '#000', borderRadius: 10, padding: 10, alignItems: 'center' },
-  chartImage: { width: '100%', height: '85%' },
   closeButton: { marginTop: 20, paddingVertical: 10, paddingHorizontal: 30, backgroundColor: '#444', borderRadius: 8 },
   closeButtonText: { color: '#fff', fontSize: 16 }
 });

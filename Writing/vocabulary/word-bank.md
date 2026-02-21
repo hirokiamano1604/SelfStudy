@@ -96,11 +96,129 @@
 
 ---
 
-## 4. 自分の練習から追加した表現
+## 4. 言い換え・類義語マップ
 
-### 追加日: YYYY-MM-DD
-| 表現 | 意味・用途 | 出典（練習日） |
+今回のWritingで実際に使った語 → より良い選択肢をまとめる。左が「つい使ってしまう語」、右が「代わりに使える語」。
+
+### 「影響する / 影響を与える」
+
+| レベル | 表現 | 例 |
 |---|---|---|
-| | | |
+| 基本 | affect / influence | Public spaces affect people's mood. |
+| 中級 | have an impact on / have an effect on | The design has a significant impact on behaviour. |
+| 上級 | shape / exert an influence on | Urban design shapes how individuals interact. |
+| 上級 | be conducive to | Green spaces are conducive to mental well-being. |
 
-<!-- 以下、練習のたびに上のテーブルをコピーして日付を更新し、追記していく -->
+### 「良くする / 改善する」
+
+| レベル | 表現 | 例 |
+|---|---|---|
+| 基本 | make ... better / improve | Improve public facilities. |
+| 中級 | enhance / boost | Enhance the quality of public areas. |
+| 上級 | elevate / enrich | Enrich the urban experience for residents. |
+
+### 「人 / 人々」
+
+| 表現 | 使い分け |
+|---|---|
+| people | 一般的（使いすぎ注意） |
+| individuals | フォーマルな言い換え |
+| citizens / residents | 都市・公共空間の話題 |
+| the general public | 社会全体 |
+| those who... | 特定の人々を指す |
+| one | 一般論（やや硬い） |
+
+### 「重要だ」
+
+| レベル | 表現 | ニュアンス |
+|---|---|---|
+| 基本 | important / matter | It matters more. |
+| 中級 | significant / essential / crucial | play a crucial role |
+| 上級 | of paramount importance | Personal freedom is of paramount importance. |
+| 上級 | hold greater significance | I believe autonomy holds greater significance. |
+
+### 「気を使う / 配慮する」
+
+| 表現 | ニュアンス |
+|---|---|
+| be mindful of others | 他者に注意を払う（自然） |
+| act with consideration for others | 配慮して行動する（フォーマル） |
+| be conscious of others' needs | 他者のニーズを意識する |
+| exercise restraint | 自制する |
+
+### 「迷惑になる / 迷惑をかける」
+
+| 表現 | ニュアンス |
+|---|---|
+| cause inconvenience to others | フォーマル・一般的 |
+| disturb others | 直接的・シンプル |
+| be a nuisance to others | やや強い |
+| intrude on others' comfort | 他者の快適さを侵害する |
+
+### 「どちらかといえば / 総合的に」
+
+| 表現 | ニュアンス | 例 |
+|---|---|---|
+| on balance | 総合判断して（Conclusion向き） | On balance, personal choice matters more. |
+| if anything | どちらかと言えば（軽め） | If anything, I lean towards... |
+| I am more inclined to believe that... | 〜に傾く | I am more inclined to believe that freedom outweighs design. |
+| all things considered | すべてを考慮すると | All things considered, autonomy is more valuable. |
+
+### 「〜できる / 自由がある」
+
+| 表現 | ニュアンス |
+|---|---|
+| have the freedom to... | 〜する自由がある |
+| exercise autonomy over | 自律性を発揮する |
+| have a sense of agency | 自己決定感がある |
+| be at liberty to... | 〜する自由がある（フォーマル） |
+
+### 「幸福 / 幸せ」
+
+| 表現 | ニュアンス |
+|---|---|
+| well-being | 幸福・健康状態（最もIELTS的） |
+| mental well-being | 精神的な幸福 |
+| quality of life | 生活の質 |
+| life satisfaction | 人生への満足度 |
+| emotional state / mood | 気分・感情状態 |
+| ~~mentality~~ | ✗ これは「考え方・気質」。幸福の意味では使わない |
+
+---
+
+## 5. 今回のWritingで間違えた表現
+
+### 2026-02-20
+
+| 自分が書いた表現 | 問題点 | 正しい表現 |
+|---|---|---|
+| views **against** the effect | against は「対抗」 | views **on / about** the effect |
+| **stress on** keeping | コロケーション誤り | **focus on** / **emphasize** |
+| get positive **emotion** | 可算名詞は複数 | experience positive **emotions** |
+| positive emotion **by** the space | 前置詞 | positive emotions **from** the space |
+| **belonging** of individual | 語形 | **personal belongings** / personal environment |
+| realize their **demand** | demand=要求 | fulfil their **needs** / satisfy their **desires** |
+| keep my **mentality** stable | mentality=考え方 | maintain my **mental well-being** |
+| **public equipment** | equipment=機器 | **public facilities** / public spaces |
+| **Otherwise**, ... | =さもなければ | **On the other hand**, / **Conversely**, |
+| hesitate **doing** | 文法 | hesitate **to do** |
+| more **effective** than | 比較級抜け | more **influential** than |
+
+---
+
+## 6. 自分の練習から追加した表現
+
+### 追加日: 2026-02-20（初回 + リライト）
+| 表現 | 意味・用途 | 出典 |
+|---|---|---|
+| it is not feasible | 実現不可能だ | リライト Body 2 — 自分で使えた ◎ |
+| without paying attention to others | 他者に気を使わずに | リライト Body 2 — 自分で使えた ◎ |
+| cause inconvenience to others | 迷惑をかける | 振り返りで学習 |
+| be mindful of others | 気を配る | 振り返りで学習 |
+| on balance | どちらかといえば / 総合的に | 振り返りで学習 |
+| I am more inclined to believe that... | どちらかと言えば〜と考える | 振り返りで学習 |
+| exert an influence on | 影響を及ぼす | フィードバックから |
+| the built environment | 人工環境（公共空間の言い換え） | フィードバックから |
+| a sense of agency | 自己決定感 | フィードバックから |
+
+<!-- 以下、練習のたびに上のセクションをコピーして日付を更新し、追記していく -->

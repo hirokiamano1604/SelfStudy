@@ -184,11 +184,36 @@
 | emotional state / mood | 気分・感情状態 |
 | ~~mentality~~ | ✗ これは「考え方・気質」。幸福の意味では使わない |
 
+### 「安定している / 変わらない」（Task 1 向き）
+
+| 表現 | ニュアンス |
+|---|---|
+| remained stable / constant | 安定した（最も安全） |
+| stayed around X% | 約X%を維持した（カジュアル寄り） |
+| showed little change | ほとんど変化がなかった |
+| ~~maintained stable~~ | ✗ maintained は目的語が必要（maintained **a level of**... ならOK） |
+
+### 「前出の名詞の繰り返しを避ける」
+
+| 表現 | 例 |
+|---|---|
+| that of X | The share of coal exceeded **that of** renewables. |
+| the former / the latter | Coal and renewables showed opposite trends; **the former** declined while **the latter** rose. |
+| ~~the one of X~~ | ✗ 不自然。使わない |
+
+### 「it's vs its」
+
+| 形 | 意味 | 例 |
+|---|---|---|
+| **its** | それの（所有格 = his, her と同じ） | Coal increased **its** share. |
+| **it's** | it is の短縮形 | **It's** clear that coal declined. |
+| 覚え方 | **his にアポストロフィをつけないのと同じ** | |
+
 ---
 
 ## 5. 今回のWritingで間違えた表現
 
-### 2026-02-20
+### 2026-02-20（Task 2）
 
 | 自分が書いた表現 | 問題点 | 正しい表現 |
 |---|---|---|
@@ -204,11 +229,24 @@
 | hesitate **doing** | 文法 | hesitate **to do** |
 | more **effective** than | 比較級抜け | more **influential** than |
 
+### 2026-02-21（Task 1）
+
+| 自分が書いた表現 | 問題点 | 正しい表現 |
+|---|---|---|
+| We can **decompose** these four | decompose = 化学・数学用語 | can be **divided into** / **fall into** |
+| **maintained** stable | maintain は目的語が必要 | **remained** stable |
+| the **one** of Renewables | 不自然 | **that** of renewables |
+| generated **by** four types | 前置詞 | generated **from** four sources |
+| ended **up with** 26% | 口語的 | ended **at** / finished **at** 26% |
+| These two **energy** had | energy は不可算名詞 | These two **energy sources** had |
+| **within** 22% and 24% | within は「〜以内」 | **between** 22% **and** 24% |
+| increased **it's** share | it's = it is | increased **its** share |
+
 ---
 
 ## 6. 自分の練習から追加した表現
 
-### 追加日: 2026-02-20（初回 + リライト）
+### 追加日: 2026-02-20（Task 2 初回 + リライト）
 | 表現 | 意味・用途 | 出典 |
 |---|---|---|
 | it is not feasible | 実現不可能だ | リライト Body 2 — 自分で使えた ◎ |
@@ -220,5 +258,16 @@
 | exert an influence on | 影響を及ぼす | フィードバックから |
 | the built environment | 人工環境（公共空間の言い換え） | フィードバックから |
 | a sense of agency | 自己決定感 | フィードバックから |
+
+### 追加日: 2026-02-21（Task 1 初回 + リライト）
+| 表現 | 意味・用途 | 出典 |
+|---|---|---|
+| share / percentage / figure | proportion の安全な代替語 | リライトで使えた ◎ |
+| remained stable | 安定していた（maintained stable ではない） | フィードバックから |
+| that of X | 前出の名詞の繰り返しを避ける（the one of X ではない） | フィードバックから |
+| can be divided into | グループ分けする（decompose ではない） | フィードバックから |
+| exhibited opposing trends | 対照的な傾向を示した | フィードバックから |
+| accounted for approximately 50% | 約50%を占めた | フィードバックから |
+| its（≠ it's） | 所有格。it's は it is の短縮形 | フィードバックから — 要暗記 |
 
 <!-- 以下、練習のたびに上のセクションをコピーして日付を更新し、追記していく -->

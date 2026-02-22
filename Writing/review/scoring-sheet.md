@@ -94,10 +94,10 @@
 
 | 日付 | タスク | TR | CC | LR | GRA | 平均 | 主な課題 |
 |---|---|---|---|---|---|---|---|
-| | | | | | | | |
-| | | | | | | | |
-| | | | | | | | |
-| | | | | | | | |
+| 2/20 | Task 2 初回 | 5.75 | 5.75 | 5.25 | 5.25 | **5.5** | SVA 6箇所、スペル 7箇所 |
+| 2/20 | Task 2 リライト | 5.75 | 6.0 | 5.75 | 5.75 | **5.75** | SVA 3箇所、Conclusionに新情報 |
+| 2/21 | Task 1 初回 | 5.25 | 6.25 | 5.25 | 6.0 | **5.75** | 外部知識混入、意見記述、スペル 9箇所 |
+| 2/21 | Task 1 リライト | 6.25 | 6.5 | 5.75 | 6.25 | **6.0–6.25** | it's/its 3箇所、語彙選択ミス |
 | | | | | | | | |
 
 ---
@@ -108,8 +108,10 @@
 
 | ミスの種類 | 具体例 | 発生回数 | 対策 |
 |---|---|---|---|
-| 例: 冠詞の脱落 | "in society" → "in a society" | | 名詞の前で毎回確認 |
-| 例: コロケーション | "do a decision" → "make a decision" | | word-bank参照 |
-| | | | |
-| | | | |
-| | | | |
+| **it's / its の混同** | it's share → its share | 3回（2/21） | his にアポストロフィつけないのと同じ |
+| **Conclusionに新情報** | 本文にない話をConclusionで展開 | 2回（2/20 初回+リライト） | Conclusion = 要約+立場再確認のみ |
+| **Task 1 で意見を書く** | "This is because..." / "tradeoff" | 1回（2/21 初回） | What だけ書く。Why は書かない |
+| **atmosphere のスペル** | atomosphere / atmosphre | 2回（2/20） | atmo + sphere で覚える |
+| **proportion のスペル** | protion / propotion | 2回（2/21） | share / percentage に逃げる |
+| **maintained stable** | maintained は目的語が必要 | 1回（2/21） | remained stable を使う |
+| **the one of X** | 不自然な代名詞 | 1回（2/21） | that of X を使う |

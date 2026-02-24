@@ -242,6 +242,21 @@
 | **within** 22% and 24% | within は「〜以内」 | **between** 22% **and** 24% |
 | increased **it's** share | it's = it is | increased **its** share |
 
+### 2026-02-22（Task 2）
+
+| 自分が書いた表現 | 問題点 | 正しい表現 |
+|---|---|---|
+| **In these days** | 不自然 | **These days** / **Nowadays** |
+| **contribute people to** maintain | contribute は人を目的語にとれない | **help** people maintain / **contribute to** well-being |
+| their **well-beings** | 不可算名詞 | their **well-being** |
+| an important **fragment** | fragment = 断片・破片 | an important **element** / **aspect** |
+| **in** commuting | 前置詞 | **while** commuting / **during** their commute |
+| put effort **on** | 前置詞 | put effort **into** |
+| people need to **withstand** it | 大げさ | people can **manage without** it |
+| some **elderlys** | elderly は形容詞。複数形なし | **elderly people** / **the elderly** |
+| **more demanded** | 不自然 | **in greater demand** |
+| receive **more** salaries | コロケーション | receive **higher** salaries |
+
 ---
 
 ## 6. 自分の練習から追加した表現
@@ -269,5 +284,17 @@
 | exhibited opposing trends | 対照的な傾向を示した | フィードバックから |
 | accounted for approximately 50% | 約50%を占めた | フィードバックから |
 | its（≠ it's） | 所有格。it's は it is の短縮形 | フィードバックから — 要暗記 |
+
+### 追加日: 2026-02-22（Task 2 初回 + リライト）
+| 表現 | 意味・用途 | 出典 |
+|---|---|---|
+| Although/Even though X, Y | 譲歩+反論（Band 7+ の必須構文） | リライトで2回使えた ◎◎ |
+| on balance | 「どちらかといえば」Conclusion向き | リライト Conclusion で使えた ◎ |
+| in terms of supply/demand | 「〜の観点から」トピック転換 | 初回から使えていた ◎ |
+| manage without | 〜なしでやっていける（withstand より自然） | フィードバックから |
+| in greater demand | 「より需要が高い」（more demanded ではない） | フィードバックから |
+| contribute **to** X | 〜に貢献する（contribute + 人 + to は不可） | フィードバックから |
+| receive **higher** salaries | receive more salaries ではない | フィードバックから |
+| barriers to entry | 参入障壁 | フィードバックから |
 
 <!-- 以下、練習のたびに上のセクションをコピーして日付を更新し、追記していく -->

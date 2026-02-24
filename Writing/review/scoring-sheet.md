@@ -98,6 +98,8 @@
 | 2/20 | Task 2 リライト | 5.75 | 6.0 | 5.75 | 5.75 | **5.75** | SVA 3箇所、Conclusionに新情報 |
 | 2/21 | Task 1 初回 | 5.25 | 6.25 | 5.25 | 6.0 | **5.75** | 外部知識混入、意見記述、スペル 9箇所 |
 | 2/21 | Task 1 リライト | 6.25 | 6.5 | 5.75 | 6.25 | **6.0–6.25** | it's/its 3箇所、語彙選択ミス |
+| 2/22 | Task 2 初回 | 5.75 | 6.25 | 6.25 | 6.0 | **6.0** | 冠詞3箇所、議論が極端 |
+| 2/22 | Task 2 リライト | 6.25 | 6.5 | 5.75 | 5.75 | **6.0** | 譲歩✓✓、冠詞7箇所、スペル7箇所 |
 | | | | | | | | |
 
 ---
@@ -108,10 +110,12 @@
 
 | ミスの種類 | 具体例 | 発生回数 | 対策 |
 |---|---|---|---|
+| **冠詞の脱落（a/an/the）** | be musician → be a musician / it is same → the same | **10回**（2/22 初回3+リライト7） | 職業→a/an、the same/the current は常にthe |
 | **it's / its の混同** | it's share → its share | 3回（2/21） | his にアポストロフィつけないのと同じ |
-| **Conclusionに新情報** | 本文にない話をConclusionで展開 | 2回（2/20 初回+リライト） | Conclusion = 要約+立場再確認のみ |
-| **Task 1 で意見を書く** | "This is because..." / "tradeoff" | 1回（2/21 初回） | What だけ書く。Why は書かない |
+| **Conclusionに新情報** | 本文にない話をConclusionで展開 | 2回（2/20）→ **2/22で修正済み ✓** | Conclusion = 要約+立場再確認のみ |
+| **Task 1 で意見を書く** | "This is because..." / "tradeoff" | 1回（2/21 初回）→ **リライトで修正済み ✓** | What だけ書く。Why は書かない |
 | **atmosphere のスペル** | atomosphere / atmosphre | 2回（2/20） | atmo + sphere で覚える |
 | **proportion のスペル** | protion / propotion | 2回（2/21） | share / percentage に逃げる |
+| **well-being を複数形にする** | well-beings → well-being | 1回（2/22） | 不可算名詞。複数形にしない |
+| **contribute + 人 + to** | contribute people to maintain | 1回（2/22） | contribute **to** X / **help** people |
 | **maintained stable** | maintained は目的語が必要 | 1回（2/21） | remained stable を使う |
-| **the one of X** | 不自然な代名詞 | 1回（2/21） | that of X を使う |

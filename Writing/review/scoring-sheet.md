@@ -100,6 +100,8 @@
 | 2/21 | Task 1 リライト | 6.25 | 6.5 | 5.75 | 6.25 | **6.0–6.25** | it's/its 3箇所、語彙選択ミス |
 | 2/22 | Task 2 初回 | 5.75 | 6.25 | 6.25 | 6.0 | **6.0** | 冠詞3箇所、議論が極端 |
 | 2/22 | Task 2 リライト | 6.25 | 6.5 | 5.75 | 5.75 | **6.0** | 譲歩✓✓、冠詞7箇所、スペル7箇所 |
+| 2/23 | Task 2 初回 | 6.5 | 6.5 | 6.0 | 5.75 | **6.0–6.25** | 動名詞主語✓✓、間接疑問文2箇所、冠詞4箇所 |
+| 2/23 | Task 2 リライト | 6.5 | 6.5 | 5.5 | 6.0 | **6.0** | 間接疑問文✓✓✓、スペル9箇所 |
 | | | | | | | | |
 
 ---
@@ -110,12 +112,13 @@
 
 | ミスの種類 | 具体例 | 発生回数 | 対策 |
 |---|---|---|---|
-| **冠詞の脱落（a/an/the）** | be musician → be a musician / it is same → the same | **10回**（2/22 初回3+リライト7） | 職業→a/an、the same/the current は常にthe |
-| **it's / its の混同** | it's share → its share | 3回（2/21） | his にアポストロフィつけないのと同じ |
+| **冠詞の脱落（a/an/the）** | be musician → a musician / having gap year → a gap year | **17回**（2/22: 10回、2/23: 7回） | 3ステップ判定: 数えられる?→単数?→特定? |
+| **their のスペル** | thier → their | **3回**（2/22Re 1, 2/23Re 2） | the + ir で覚える |
+| **interested のスペル** | intrested → interested | **2回**（2/23初+Re） | interest + ed |
+| **beneficial のスペル** | benefitial → beneficial | **2回**（2/23Re） | benefit → beneficial（tをcに） |
+| **it's / its の混同** | it's share → its share | 3回（2/21）→ その後出現なし | his にアポストロフィつけないのと同じ |
+| **間接疑問文の語順** | what is he want → what he wants | 2回（2/23初）→ **2/23Reで修正済み ✓** | 文中の how/what/whether は平叙文語順 |
 | **Conclusionに新情報** | 本文にない話をConclusionで展開 | 2回（2/20）→ **2/22で修正済み ✓** | Conclusion = 要約+立場再確認のみ |
 | **Task 1 で意見を書く** | "This is because..." / "tradeoff" | 1回（2/21 初回）→ **リライトで修正済み ✓** | What だけ書く。Why は書かない |
-| **atmosphere のスペル** | atomosphere / atmosphre | 2回（2/20） | atmo + sphere で覚える |
-| **proportion のスペル** | protion / propotion | 2回（2/21） | share / percentage に逃げる |
-| **well-being を複数形にする** | well-beings → well-being | 1回（2/22） | 不可算名詞。複数形にしない |
-| **contribute + 人 + to** | contribute people to maintain | 1回（2/22） | contribute **to** X / **help** people |
-| **maintained stable** | maintained は目的語が必要 | 1回（2/21） | remained stable を使う |
+| **leads to + 動名詞** | leads to maintain → leads to maintaining | 1回（2/23Re） | to は前置詞 → 後ろは動名詞 |
+| **care about / relate to** | cared seriously → cared about / relates with → relate to | 2回（2/23Re） | 動詞+前置詞はセットで覚える |

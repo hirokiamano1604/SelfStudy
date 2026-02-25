@@ -257,6 +257,21 @@
 | **more demanded** | 不自然 | **in greater demand** |
 | receive **more** salaries | コロケーション | receive **higher** salaries |
 
+### 2026-02-23（Task 2）
+
+| 自分が書いた表現 | 問題点 | 正しい表現 |
+|---|---|---|
+| **have a distance from** studying | コロケーション | **take a break from** / **distance themselves from** |
+| it **leads to maintain** | leads to + 動名詞 | leads to **maintaining** / helps **maintain** |
+| never **cared** seriously | care about | never **cared about** seriously |
+| the students' **value** | 単数 = 価値 | the students' **values** / **perspectives** |
+| **the one** is interested in | 不自然な代名詞 | **he or she is** / **they are** |
+| or **relates with** society | 前置詞 | **relate to** / **engage with** society |
+| **in the case** a student | 文法 | **in the case of** a student who / **if** a student |
+| **a few** experiences（肯定的） | a few = いくつかの | **few** experiences（ほとんどない） |
+| for **some parts of** students | コロケーション | for **some** students |
+| **As a conclusion** | 固定表現 | **In conclusion** |
+
 ---
 
 ## 6. 自分の練習から追加した表現
@@ -296,5 +311,19 @@
 | contribute **to** X | 〜に貢献する（contribute + 人 + to は不可） | フィードバックから |
 | receive **higher** salaries | receive more salaries ではない | フィードバックから |
 | barriers to entry | 参入障壁 | フィードバックから |
+
+### 追加日: 2026-02-23（Task 2 初回 + リライト）
+| 表現 | 意味・用途 | 出典 |
+|---|---|---|
+| **Taking** X provides... / **Having** X is likely to... | 動名詞主語（3回使えた） | 初回+リライトで自力使用 ◎◎◎ |
+| **whether** X depends on... | 間接疑問文の正しい語順（5箇所全て正しい） | リライトで定着 ◎◎ |
+| **essential** | 不可欠な（不可欠ってなんていう？→ これ） | リライトで使えた ◎ |
+| **In practice**, ... | 「実際には」良い接続表現 | リライトで使えた ◎ |
+| **students' having** X provides | 所有格+動名詞。高度な構造 | リライトで使えた ◎ |
+| **values**（複数）= 価値観 | 単数 value = 価値。複数で「価値観」 | フィードバックから |
+| **engage with** society | 社会と関わる（relate with ✗） | フィードバックから |
+| **compulsory** education | 義務教育（obliged education ✗） | フィードバックから |
+| **few** vs **a few** | few = ほとんどない / a few = いくつかの | フィードバックから |
+| **care about** / **relate to** | 動詞+前置詞はセットで覚える | フィードバックから |
 
 <!-- 以下、練習のたびに上のセクションをコピーして日付を更新し、追記していく -->

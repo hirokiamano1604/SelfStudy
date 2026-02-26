@@ -71,6 +71,17 @@
 | plateaued at... | 〜で頭打ちになった |
 | fluctuated between... and... | 〜の間で変動 |
 
+### 割合を表す動詞
+| 表現 | 例文 |
+|---|---|
+| accounted for | Agriculture **accounted for** 70% of water use. |
+| represented | Agriculture **represented** the largest share. |
+| made up | Domestic **made up** only 15%. |
+| allocated X to Y | Country A **allocated** 70% of its water **to** agriculture. |
+| devoted X to Y | Country A **devoted** most of its water **to** farming. |
+| occupied | The industrial sector **occupied** 45%. |
+| ~~used X **into** Y~~ | ✗ use X **for** Y が正しい |
+
 ### 比較
 | 表現 | 用途 |
 |---|---|
@@ -78,6 +89,8 @@
 | significantly higher/lower than | 著しく高い/低い |
 | nearly double / triple | ほぼ2倍/3倍 |
 | accounted for the largest proportion | 最大の割合を占めた |
+| more than half of | 半分以上（a half ではない） |
+| the highest/lowest figure among | 〜の中で最大/最小の数値 |
 
 ---
 
@@ -197,9 +210,27 @@
 
 | 表現 | 例 |
 |---|---|
-| that of X | The share of coal exceeded **that of** renewables. |
+| that of X（単数） | The share of coal exceeded **that of** renewables. |
+| **those of** X（複数） | The figures were higher than **those of** other countries. |
 | the former / the latter | Coal and renewables showed opposite trends; **the former** declined while **the latter** rose. |
 | ~~the one of X~~ | ✗ 不自然。使わない |
+
+### 「section vs sector」
+
+| 語 | 意味 | 使う場面 |
+|---|---|---|
+| **sector** | 産業・経済の区分 | the agricultural **sector** / the industrial **sector** |
+| section | 文書・建物の区画 | Section 2 of the report |
+| ~~sections~~ で産業区分 | ✗ 常に **sectors** を使う |
+
+### 「全体の」
+
+| 表現 | ニュアンス |
+|---|---|
+| **total** | 合計の（最も安全・汎用的） |
+| overall | 全体的な |
+| entire | 全部の（やや強調） |
+| ~~whole consumption~~ | → **total consumption** が自然 |
 
 ### 「it's vs its」
 
@@ -256,6 +287,23 @@
 | some **elderlys** | elderly は形容詞。複数形なし | **elderly people** / **the elderly** |
 | **more demanded** | 不自然 | **in greater demand** |
 | receive **more** salaries | コロケーション | receive **higher** salaries |
+
+### 2026-02-24（Task 1）
+
+| 自分が書いた表現 | 問題点 | 正しい表現 |
+|---|---|---|
+| used 70% **into** agriculture | 前置詞 | used 70% **for** agriculture |
+| the **different four** countries | 語順 | **four different** countries |
+| On the other **hands** | 固定表現 | On the other **hand** |
+| **huge** proportion | huge はカジュアル + a 脱落 | **a large** proportion |
+| the percentages of the usage for each purpose | 冗長 | the percentage of water used **by sector** |
+| **the** country A | 固有名詞に the 不要 | Country A |
+| three **sections** | section = 文書区画 | three **sectors** |
+| **a half** of water | half に a 不要 | **half** of their water |
+| had most **percentages** | 不自然 | accounted for the **largest share** |
+| **the one** of the other countries | 複数なら those | **those of** the other countries |
+| It is **intresting** that | スペル + Task 1 で意見禁止 | **Notably**, ... |
+| **whole** consumption | やや不自然 | **total** consumption |
 
 ### 2026-02-23（Task 2）
 
@@ -325,5 +373,19 @@
 | **compulsory** education | 義務教育（obliged education ✗） | フィードバックから |
 | **few** vs **a few** | few = ほとんどない / a few = いくつかの | フィードバックから |
 | **care about** / **relate to** | 動詞+前置詞はセットで覚える | フィードバックから |
+
+### 追加日: 2026-02-24（Task 1 初回 + リライト）
+| 表現 | 意味・用途 | 出典 |
+|---|---|---|
+| **use X for Y** / **allocate X to Y** | 水・資源の用途を述べる（into ✗） | 初回で2箇所ミス → リライトで完全修正 ◎◎ |
+| **illustrates** | shows の言い換え（Introduction向き） | リライトで使えた ◎ |
+| **allocated** / **allocations** | 配分した・配分 | リライトで使えた ◎ |
+| **the agricultural usage** | 形容詞形で語彙に変化 | リライトで使えた ◎ |
+| **respectively** | それぞれ（for each の代替） | 添削で導入 → リライトで使えた ◎ |
+| **Notably, ...** | 注目すべきは（"interesting" の代替） | FBから学習 |
+| **sector**（≠ section） | 産業区分。section は文書の区画 | FBから — 要暗記 |
+| more than **half** of（a 不要） | 半分以上の | FBから — 要暗記 |
+| **total** consumption（≠ whole） | 全体の消費量 | FBから |
+| **those of** X（複数の比較） | the one of X ✗ | FBから |
 
 <!-- 以下、練習のたびに上のセクションをコピーして日付を更新し、追記していく -->

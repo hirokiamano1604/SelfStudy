@@ -102,6 +102,8 @@
 | 2/22 | Task 2 リライト | 6.25 | 6.5 | 5.75 | 5.75 | **6.0** | 譲歩✓✓、冠詞7箇所、スペル7箇所 |
 | 2/23 | Task 2 初回 | 6.5 | 6.5 | 6.0 | 5.75 | **6.0–6.25** | 動名詞主語✓✓、間接疑問文2箇所、冠詞4箇所 |
 | 2/23 | Task 2 リライト | 6.5 | 6.5 | 5.5 | 6.0 | **6.0** | 間接疑問文✓✓✓、スペル9箇所 |
+| 2/24 | Task 1 初回 | 5.5 | 6.0 | 5.5 | 5.5 | **5.5** | 冠詞7箇所、use X into、Domestic無視 |
+| 2/24 | Task 1 リライト | 6.0 | 6.5 | 6.0 | 5.5 | **6.0** | use for定着✓、sections→sectors、データ誤読2箇所 |
 | | | | | | | | |
 
 ---
@@ -112,7 +114,7 @@
 
 | ミスの種類 | 具体例 | 発生回数 | 対策 |
 |---|---|---|---|
-| **冠詞の脱落（a/an/the）** | be musician → a musician / having gap year → a gap year | **17回**（2/22: 10回、2/23: 7回） | 3ステップ判定: 数えられる?→単数?→特定? |
+| **冠詞の脱落（a/an/the）** | be musician → a musician / having gap year → a gap year | **24回**（2/22: 10、2/23: 7、2/24: 7） | 3ステップ判定: 数えられる?→単数?→特定? |
 | **their のスペル** | thier → their | **3回**（2/22Re 1, 2/23Re 2） | the + ir で覚える |
 | **interested のスペル** | intrested → interested | **2回**（2/23初+Re） | interest + ed |
 | **beneficial のスペル** | benefitial → beneficial | **2回**（2/23Re） | benefit → beneficial（tをcに） |
@@ -122,3 +124,9 @@
 | **Task 1 で意見を書く** | "This is because..." / "tradeoff" | 1回（2/21 初回）→ **リライトで修正済み ✓** | What だけ書く。Why は書かない |
 | **leads to + 動名詞** | leads to maintain → leads to maintaining | 1回（2/23Re） | to は前置詞 → 後ろは動名詞 |
 | **care about / relate to** | cared seriously → cared about / relates with → relate to | 2回（2/23Re） | 動詞+前置詞はセットで覚える |
+| **use X into → use X for** | used 70% into agriculture → used 70% for agriculture | 2回（2/24初）→ **2/24Reで修正済み ✓** | use X **for** Y / allocate X **to** Y |
+| **section vs sector** | three sections → three sectors | 4回（2/24Re） | section=文書の区画、sector=産業の区分 |
+| **a half → half** | more than a half → more than half | 3回（2/24Re） | half は単独で使える。a 不要 |
+| **the + 固有名詞** | the country A → Country A | 7回（2/24初）→ **2/24Reで修正済み ✓** | Tokyo に the をつけないのと同じ |
+| **データ誤読** | Country B Industry 45%→40%と記載 | 2回（2/24Re） | 数字を書いたら必ず元データと照合 |
+| **Task 1 で主観表現** | "It is interesting that" | 1回（2/24添削）| Notably / It is worth noting で代替 |

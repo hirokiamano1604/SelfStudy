@@ -10,11 +10,15 @@
 Writing/
 ├── README.md                  ← このファイル（全体ガイド）
 ├── PRE_WRITING_CHECKLIST.md   ← 毎回書く前に確認
+├── formats/                   ← 問題タイプ別の構成フォーマット（逸脱するとFBで指摘）
+│   ├── README.md              ← どのファイルをいつ使うか
+│   ├── task1_*.md             ← Task 1: 時系列・比較・地図・プロセス
+│   └── task2_*.md             ← Task 2: Agree/Disagree, Discuss Both Views 等
 ├── templates/
 │   ├── task1_template.md      ← Task 1 練習用テンプレート
 │   └── task2_template.md      ← Task 2 練習用テンプレート
 ├── practice/
-│   └── YYYY-MM-DD_task[1or2].md  ← 日々の練習ファイル
+│   └── YYYY-MM-DD/            ← 日付フォルダ内に練習ファイル
 ├── vocabulary/
 │   └── word-bank.md           ← 語彙・表現の蓄積
 └── review/

@@ -51,9 +51,11 @@
 | 表現 | ニュアンス |
 |---|---|
 | increased / rose / grew | 一般的な増加 |
+| go up / climb | rise の言い換え（went up, climbed） |
 | surged / soared | 急激な増加 |
 | climbed steadily | 着実な増加 |
 | experienced a marginal rise | わずかな増加 |
+| **倍数「〜倍に増えた」** | **increased 1.5-fold** / **rose to 1.5 times the 2010 figure** / **was 1.5 times that of 2010**。~~incremented 1.5 times~~ は不可（increment＝一定量を足す動詞）。名詞なら a 1.5-fold increase |
 
 ### 減少
 | 表現 | ニュアンス |
@@ -70,6 +72,17 @@
 | levelled off | 横ばいになった |
 | plateaued at... | 〜で頭打ちになった |
 | fluctuated between... and... | 〜の間で変動 |
+
+### 数値・人数の言い換え（number / figure 以外）
+| 表現 | 例文・注意 |
+|---|---|
+| **count** | the visitor **count** / the **count** rose to 35,000 |
+| **total** | the **total** for Museum A / **total** visitors |
+| **attendance** | **attendance** at Museum B fell（来場者数・出席者数） |
+| **level** | visitor **levels** increased |
+| **volume** | the **volume** of visitors（ややフォーマル） |
+| 動詞で避ける | Museum A **had** 20,000 visitors. / Museum A **attracted** 20,000 visitors. |
+| **thousand** | **20 thousand** visitors（数＋thousand は単数。~~20 thousands~~ は不可） |
 
 ### 割合を表す動詞
 | 表現 | 例文 |
@@ -319,6 +332,57 @@
 | **a few** experiences（肯定的） | a few = いくつかの | **few** experiences（ほとんどない） |
 | for **some parts of** students | コロケーション | for **some** students |
 | **As a conclusion** | 固定表現 | **In conclusion** |
+
+### 2026-03-01（Task 2）
+
+| 自分が書いた表現 | 問題点 | 正しい表現 |
+|---|---|---|
+| **load**（道路の意味で） | load = 荷物・負荷 | **road** = 道路 |
+| **conjunction**（渋滞の意味で） | conjunction = 接続詞・結合 | **congestion** = 渋滞 |
+| **trafic** | スペル | **traffic** |
+| **pathaway** | スペル | **pathway** |
+| **tackle with** this | tackle は他動詞 | **tackle** this |
+| the amount of **car** | 可算名詞 | the number of **cars** |
+| **two aspect** | 複数 | **two aspects** |
+| commute **their** office | 前置詞 | commute **to their** office |
+
+### 「road vs load / congestion vs conjunction」（交通トピック）
+
+| 語 | 意味 | 例 |
+|---|---|---|
+| **road** | 道路 | narrow **roads** / the capacity of the **road** |
+| **load** | 荷物・負荷 | heavy **load** / the **load** on the system |
+| **congestion** | 渋滞 | traffic **congestion** |
+| **conjunction** | 接続詞（文法）・結合 | in **conjunction** with（〜と合わせて） |
+
+### 2026-03-02（Task 1）
+
+| 自分が書いた表現 | 問題点 | 正しい表現 |
+|---|---|---|
+| **visiter** / **visiters** | スペル | **visitor** / **visitors** |
+| **theree** | スペル | **three** |
+| **incresed** | スペル | **increased** |
+| **20 thousands** | 数＋thousand は単数 | **20 thousand** (visitors) |
+| **after the five years** | 期間は over | **over the five years** / **over the period** |
+| **with a rapid pace** | 前置詞 | **at** a rapid pace |
+| **the number of attendee** | 複数 | the number of **attendees** |
+| **the figure of visitor** | of より for / 複数 | the figure **for** Museum A / **visitor numbers** |
+
+### 2026-03-01 Task 2 リライトでまだ出た誤り
+
+| 自分が書いた表現 | 問題点 | 正しい表現 |
+|---|---|---|
+| **Nowdays** | スペル | **Nowadays** |
+| **spacial** | スペル | **spatial**（空間の） |
+| **goning** | スペル | **going** |
+| **controll** | スペル | **control** |
+| **leads to exceed** | lead to + 名詞/動名詞 | leads to **exceeding** / causes ... to exceed |
+| **make cars to decrease** | make + O + 原形 | make cars **decrease** |
+| **to diverse** | 動詞形 | **to diversify** |
+| **to promoting** | is to + 原形 | **to promote** |
+| **These solution** | 複数 | **These solutions** |
+| traffic jam ... **are** caused | 主語が単数 | traffic jam **is** caused |
+| **go to office in noon** | 前置詞 | go to **the** office **at** noon |
 
 ---
 

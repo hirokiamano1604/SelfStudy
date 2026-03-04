@@ -104,6 +104,15 @@
 | 2/23 | Task 2 リライト | 6.5 | 6.5 | 5.5 | 6.0 | **6.0** | 間接疑問文✓✓✓、スペル9箇所 |
 | 2/24 | Task 1 初回 | 5.5 | 6.0 | 5.5 | 5.5 | **5.5** | 冠詞7箇所、use X into、Domestic無視 |
 | 2/24 | Task 1 リライト | 6.0 | 6.5 | 6.0 | 5.5 | **6.0** | use for定着✓、sections→sectors、データ誤読2箇所 |
+| 2/25 | Task 2 初回 | 6.0 | 6.0 | 5.5 | 5.0–5.5 | **5.5–6.0** | SVA・冠詞・スペル多数、3語セット未使用 |
+| 2/26 | Task 1 初回 | 5.0–5.5 | 6.0 | 5.5 | 5.5 | **5.5** | 増減の方向逆（Detail 1でdecreased）、four/resources |
+| 2/26 | Task 1 リライト | 6.0 | 6.0 | 6.0 | 5.5 | **6.0** | 方向修正✓、illustrates→illustrate、shere、Roughly→Overall |
+| 2/27 | Task 2 初回 | 6.0 | 6.0 | 5.5 | 5.0–5.5 | **5.5–6.0** | SVA 4箇所、冠詞・スペル、consider of / benefit from 誤用 |
+| 2/28 | Task 1 初回 | 5.5–6.0 | 6.0 | 5.5 | 5.0–5.5 | **5.5** | train+bus→train+tram、incremented誤用、時制・冠詞・スペル、語数多め |
+| 3/1 | Task 2 初回 | 6.0 | 6.0 | 5.0–5.5 | 5.5 | **5.5** | load→road、conjunction→congestion、trafic、tackle with→tackle |
+| 3/1 | Task 2 リライト | 6.0–6.5 | 6.0 | 5.5–6.0 | 5.5 | **6.0** | road/tackle/Intro予告✓、leads to exceed、make to decrease、spatial |
+| 3/2 | Task 1 初回 | 6.0 | 6.0 | 5.5 | 5.5 | **5.5–6.0** | visitor(s)、thousand、after→over、at a pace、数値言い換え→word-bank |
+| 3/2 | Task 1 リライト | 5.5–6.0 | 6.0 | 5.5–6.0 | 5.5 | **5.5–6.0** | Museum C 年と数値の誤り(15→2015,20→2017)、thousands、musuems、SVA |
 | | | | | | | | |
 
 ---
@@ -114,7 +123,7 @@
 
 | ミスの種類 | 具体例 | 発生回数 | 対策 |
 |---|---|---|---|
-| **冠詞の脱落（a/an/the）** | be musician → a musician / having gap year → a gap year | **24回**（2/22: 10、2/23: 7、2/24: 7） | 3ステップ判定: 数えられる?→単数?→特定? |
+| **冠詞の脱落（a/an/the）** | be musician → a musician / having gap year → a gap year | **24回**（2/22: 10、2/23: 7、2/24: 7） | 「ひとつ」なら a/the のどちらか必須。指し方で選ぶ → `TIPS_GRAMMAR.md` |
 | **their のスペル** | thier → their | **3回**（2/22Re 1, 2/23Re 2） | the + ir で覚える |
 | **interested のスペル** | intrested → interested | **2回**（2/23初+Re） | interest + ed |
 | **beneficial のスペル** | benefitial → beneficial | **2回**（2/23Re） | benefit → beneficial（tをcに） |
@@ -122,7 +131,7 @@
 | **間接疑問文の語順** | what is he want → what he wants | 2回（2/23初）→ **2/23Reで修正済み ✓** | 文中の how/what/whether は平叙文語順 |
 | **Conclusionに新情報** | 本文にない話をConclusionで展開 | 2回（2/20）→ **2/22で修正済み ✓** | Conclusion = 要約+立場再確認のみ |
 | **Task 1 で意見を書く** | "This is because..." / "tradeoff" | 1回（2/21 初回）→ **リライトで修正済み ✓** | What だけ書く。Why は書かない |
-| **leads to + 動名詞** | leads to maintain → leads to maintaining | 1回（2/23Re） | to は前置詞 → 後ろは動名詞 |
+| **leads to + 動名詞** | leads to maintain → leads to maintaining / leads to exceed → exceeding | **2回**（2/23Re、3/1Re） | to は前置詞 → 後ろは動名詞 |
 | **care about / relate to** | cared seriously → cared about / relates with → relate to | 2回（2/23Re） | 動詞+前置詞はセットで覚える |
 | **use X into → use X for** | used 70% into agriculture → used 70% for agriculture | 2回（2/24初）→ **2/24Reで修正済み ✓** | use X **for** Y / allocate X **to** Y |
 | **section vs sector** | three sections → three sectors | 4回（2/24Re） | section=文書の区画、sector=産業の区分 |

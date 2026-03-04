@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   StyleSheet,
   Text,
@@ -6,8 +6,9 @@ import {
   TouchableOpacity,
   Modal,
   Platform,
-  // Image, // ★画像コンポーネントは一旦使わない
+  ScrollView,
 } from 'react-native';
+import { Image } from 'expo-image';
 import { ALL_HAND_RANGES, PositionID, ActionType, RangeEntry } from '../../constants/pokerData';
 import { evaluateAction } from '../../utils/gameLogic';
 
@@ -50,8 +51,8 @@ export default function GtoTrainerScreen() {
         return;
     }
 
-    const rankToCheck = currentHandEntry ? currentHandEntry.rank : FALLBACK_HAND.rank;
-    const result = evaluateAction(currentPosition, rankToCheck, action);
+    const handToCheck = currentHandEntry ? currentHandEntry.hand : FALLBACK_HAND.hand;
+    const result = evaluateAction(currentPosition, handToCheck, action);
     
     setFeedbackMessage(result.message);
     setLastResultCorrect(result.isCorrect);
@@ -129,7 +130,7 @@ export default function GtoTrainerScreen() {
         </View>
       </View>
 
-      {/* Modal - 画像なしテキストのみ版 */}
+      {/* Modal - ヨコサワハンドレンジ表（table.jpg） */}
       <Modal
         visible={modalVisible}
         transparent={true}
@@ -138,14 +139,14 @@ export default function GtoTrainerScreen() {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
-            {/* 画像読み込みエラー回避のためテキストのみ表示 */}
-            <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-                <Text style={{color: '#fff', textAlign: 'center'}}>
-                    Chart Image is temporarily disabled.{'\n'}
-                    Check file path/name case sensitivity.
-                </Text>
-            </View>
-            
+            <Text style={styles.modalTitle}>📊 リングゲームのヨコサワハンドレンジ表</Text>
+            <ScrollView style={styles.chartScroll} contentContainerStyle={styles.chartScrollContent}>
+              <Image
+                source={require('@/assets/images/table.jpg')}
+                style={styles.chartImage}
+                contentFit="contain"
+              />
+            </ScrollView>
             <TouchableOpacity style={styles.closeButton} onPress={() => setModalVisible(false)}>
               <Text style={styles.closeButtonText}>Close</Text>
             </TouchableOpacity>
@@ -196,7 +197,11 @@ const styles = StyleSheet.create({
   actionBtn: { width: '48%', paddingVertical: 20, borderRadius: 12, alignItems: 'center', cursor: 'pointer' }, // cursor pointer追加
   actionBtnText: { color: '#fff', fontSize: 20, fontWeight: 'bold' },
   modalContainer: { flex: 1, backgroundColor: 'rgba(0,0,0,0.9)', justifyContent: 'center', alignItems: 'center' },
-  modalContent: { width: '90%', height: '80%', backgroundColor: '#000', borderRadius: 10, padding: 10, alignItems: 'center' },
-  closeButton: { marginTop: 20, paddingVertical: 10, paddingHorizontal: 30, backgroundColor: '#444', borderRadius: 8 },
-  closeButtonText: { color: '#fff', fontSize: 16 }
+  modalContent: { width: '95%', maxHeight: '90%', backgroundColor: '#1a1a1a', borderRadius: 10, padding: 16, alignItems: 'center' },
+  modalTitle: { color: '#fff', fontSize: 14, fontWeight: 'bold', marginBottom: 10 },
+  chartScroll: { flex: 1, width: '100%', maxHeight: 450 },
+  chartScrollContent: { paddingBottom: 12 },
+  chartImage: { width: '100%', minHeight: 400 },
+  closeButton: { marginTop: 12, paddingVertical: 10, paddingHorizontal: 30, backgroundColor: '#444', borderRadius: 8 },
+  closeButtonText: { color: '#fff', fontSize: 16 },
 });

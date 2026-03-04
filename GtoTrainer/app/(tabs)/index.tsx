@@ -7,18 +7,21 @@ import {
   Modal,
   Platform,
   ScrollView,
+  Alert,
 } from 'react-native';
 import { Image } from 'expo-image';
 import { ALL_HAND_RANGES, PositionID, ActionType, RangeEntry } from '../../constants/pokerData';
 import { evaluateAction } from '../../utils/gameLogic';
+import { useTrainingHistory } from '../../hooks/useTrainingHistory';
 
 const POSITIONS: PositionID[] = ['UTG', 'EP', 'LJ', 'HJ', 'CO', 'BTN'];
 const FALLBACK_HAND: RangeEntry = { hand: 'AA', rank: 'R_PURPLE' };
 
 export default function GtoTrainerScreen() {
+  const { recordResult, isMastered, getMasteredCount, resetHistory } = useTrainingHistory();
+
   const [currentPosition, setCurrentPosition] = useState<PositionID>('UTG');
-  
-  // 初期化ロジック
+
   const [currentHandEntry, setCurrentHandEntry] = useState<RangeEntry>(() => {
     if (ALL_HAND_RANGES && ALL_HAND_RANGES.length > 0) {
       return ALL_HAND_RANGES[Math.floor(Math.random() * ALL_HAND_RANGES.length)];
@@ -31,29 +34,25 @@ export default function GtoTrainerScreen() {
   const [modalVisible, setModalVisible] = useState<boolean>(false);
   const [lastResultCorrect, setLastResultCorrect] = useState<boolean | null>(null);
 
-  const generateNewHand = () => {
-    if (ALL_HAND_RANGES && ALL_HAND_RANGES.length > 0) {
-      const randomIndex = Math.floor(Math.random() * ALL_HAND_RANGES.length);
-      setCurrentHandEntry(ALL_HAND_RANGES[randomIndex]);
-    } else {
-      setCurrentHandEntry(FALLBACK_HAND);
-    }
+  // 指定ポジションの未習得ハンドから1つランダムに選ぶ。全習得済みなら全体から選ぶ。
+  const generateNewHand = (position: PositionID = currentPosition) => {
+    const pool = ALL_HAND_RANGES.filter((entry) => !isMastered(position, entry.hand));
+    const source = pool.length > 0 ? pool : ALL_HAND_RANGES;
+    setCurrentHandEntry(source[Math.floor(Math.random() * source.length)]);
     setFeedbackMessage(' ');
     setLastResultCorrect(null);
     setIsProcessing(false);
   };
 
   const handleAction = (action: ActionType) => {
-    console.log(`Action Pressed: ${action}`); // ★F12コンソールで確認用
-
-    if (isProcessing) {
-        console.log('Ignore: Processing in progress');
-        return;
-    }
+    if (isProcessing) return;
 
     const handToCheck = currentHandEntry ? currentHandEntry.hand : FALLBACK_HAND.hand;
     const result = evaluateAction(currentPosition, handToCheck, action);
-    
+
+    // 結果を記録（正誤にかかわらず記録する）
+    recordResult(currentPosition, handToCheck, result.isCorrect);
+
     setFeedbackMessage(result.message);
     setLastResultCorrect(result.isCorrect);
     setIsProcessing(true);
@@ -71,14 +70,45 @@ export default function GtoTrainerScreen() {
     return 'transparent';
   };
 
+  const handleReset = () => {
+    Alert.alert(
+      'Reset Progress',
+      '全ての習得履歴をリセットしますか？',
+      [
+        { text: 'Cancel', style: 'cancel' },
+        {
+          text: 'Reset',
+          style: 'destructive',
+          onPress: () => {
+            resetHistory();
+            generateNewHand();
+          },
+        },
+      ]
+    );
+  };
+
+  const masteredCount = getMasteredCount(currentPosition);
+  const totalHands = ALL_HAND_RANGES.length;
+
   return (
     <View style={styles.container}>
       {/* Header */}
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>GTO Trainer</Text>
-        <TouchableOpacity style={styles.chartButton} onPress={() => setModalVisible(true)}>
-          <Text style={styles.chartButtonText}>📊 Chart</Text>
-        </TouchableOpacity>
+        <View>
+          <Text style={styles.headerTitle}>GTO Trainer</Text>
+          <Text style={styles.masteredLabel}>
+            Mastered: {masteredCount}/{totalHands}
+          </Text>
+        </View>
+        <View style={styles.headerRight}>
+          <TouchableOpacity style={styles.resetButton} onPress={handleReset}>
+            <Text style={styles.resetButtonText}>Reset</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.chartButton} onPress={() => setModalVisible(true)}>
+            <Text style={styles.chartButtonText}>📊 Chart</Text>
+          </TouchableOpacity>
+        </View>
       </View>
 
       {/* Position Selector */}
@@ -88,9 +118,8 @@ export default function GtoTrainerScreen() {
             key={pos}
             style={[styles.posButton, currentPosition === pos && styles.posButtonSelected]}
             onPress={() => {
-              console.log(`Pos Changed: ${pos}`);
               setCurrentPosition(pos);
-              generateNewHand();
+              generateNewHand(pos);
             }}
           >
             <Text style={[styles.posText, currentPosition === pos && styles.posTextSelected]}>
@@ -165,22 +194,26 @@ const ActionBtn = ({ color, label, onPress }: { color: string, label: string, on
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#1e1e1e', paddingTop: Platform.OS === 'web' ? 0 : 50 },
-  header: { 
-    flexDirection: 'row', 
-    justifyContent: 'space-between', 
-    alignItems: 'center', 
-    padding: 20, 
-    borderBottomWidth: 1, 
-    borderBottomColor: '#333' 
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 20,
+    borderBottomWidth: 1,
+    borderBottomColor: '#333',
   },
   headerTitle: { color: '#fff', fontSize: 22, fontWeight: 'bold' },
+  masteredLabel: { color: '#888', fontSize: 11, marginTop: 2 },
+  headerRight: { flexDirection: 'row', alignItems: 'center', gap: 8 },
+  resetButton: { padding: 8, backgroundColor: '#333', borderRadius: 8 },
+  resetButtonText: { color: '#f44336', fontWeight: 'bold', fontSize: 12 },
   chartButton: { padding: 8, backgroundColor: '#333', borderRadius: 8 },
   chartButtonText: { color: '#4fc3f7', fontWeight: 'bold' },
-  positionContainer: { 
-    flexDirection: 'row', 
-    justifyContent: 'space-around', 
-    backgroundColor: '#252525', 
-    paddingVertical: 10 
+  positionContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    backgroundColor: '#252525',
+    paddingVertical: 10,
   },
   posButton: { paddingVertical: 8, paddingHorizontal: 10, borderRadius: 5, borderWidth: 1, borderColor: '#444' },
   posButtonSelected: { backgroundColor: '#4fc3f7', borderColor: '#4fc3f7' },
@@ -194,7 +227,7 @@ const styles = StyleSheet.create({
   nextButtonText: { color: '#fff', fontSize: 16 },
   actionsContainer: { padding: 20, paddingBottom: 40 },
   actionsRow: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 15 },
-  actionBtn: { width: '48%', paddingVertical: 20, borderRadius: 12, alignItems: 'center', cursor: 'pointer' }, // cursor pointer追加
+  actionBtn: { width: '48%', paddingVertical: 20, borderRadius: 12, alignItems: 'center', cursor: 'pointer' },
   actionBtnText: { color: '#fff', fontSize: 20, fontWeight: 'bold' },
   modalContainer: { flex: 1, backgroundColor: 'rgba(0,0,0,0.9)', justifyContent: 'center', alignItems: 'center' },
   modalContent: { width: '95%', maxHeight: '90%', backgroundColor: '#1a1a1a', borderRadius: 10, padding: 16, alignItems: 'center' },

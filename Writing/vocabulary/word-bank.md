@@ -368,6 +368,23 @@
 | **the number of attendee** | 複数 | the number of **attendees** |
 | **the figure of visitor** | of より for / 複数 | the figure **for** Museum A / **visitor numbers** |
 
+### 2026-03-03（Task 2）
+
+| 自分が書いた表現 | 問題点 | 正しい表現 |
+|---|---|---|
+| **In balance** | コロケーション | **On balance**（総合的に） |
+| **anthoropology** | スペル | **anthropology** |
+| **thier** | スペル | **their**（the + ir） |
+| **exmaple** | スペル | **example** |
+| **governement** | スペル | **government** |
+| **it's reviving** | it's＝it is。ここは「その復活」 | **its revival** |
+| **how do the speakers perceive** | 間接疑問文は平叙文語順 | **how the speakers perceive** |
+| **any languages can be recovered once it extincts** | 意味が逆。extinct は形容詞 | **no language can be recovered once it becomes extinct** |
+| **Ireland language** | 国名の形容詞 | **Irish language** |
+| **alternated by** | alternate＝交互にする | **replaced by**（置き換える） |
+| **minor languages** | minor＝未成年の | **minority languages**（少数言語） |
+| **additional helps** | help は不可算 | **additional help** |
+
 ### 2026-03-01 Task 2 リライトでまだ出た誤り
 
 | 自分が書いた表現 | 問題点 | 正しい表現 |
@@ -451,5 +468,15 @@
 | more than **half** of（a 不要） | 半分以上の | FBから — 要暗記 |
 | **total** consumption（≠ whole） | 全体の消費量 | FBから |
 | **those of** X（複数の比較） | the one of X ✗ | FBから |
+
+### 追加日: 2026-03-03（Task 2）
+| 表現 | 意味・用途 | 出典 |
+|---|---|---|
+| **On balance**, I think... | 総合的に考えて（In balance ✗） | FBから — 要暗記 |
+| **once it becomes extinct** | いったん絶滅すると（extinct は形容詞） | FBから |
+| **its revival** | その復活（it's＝it is なので「復活」は its） | FBから |
+| **Irish** language | アイルランドの（Ireland は国名） | FBから |
+| **replace** X **by** Y | 置き換える（alternate＝交互にする） | FBから |
+| **minority** languages | 少数言語（minor＝未成年の） | FBから |
 
 <!-- 以下、練習のたびに上のセクションをコピーして日付を更新し、追記していく -->

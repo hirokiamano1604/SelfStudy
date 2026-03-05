@@ -113,6 +113,7 @@
 | 3/1 | Task 2 リライト | 6.0–6.5 | 6.0 | 5.5–6.0 | 5.5 | **6.0** | road/tackle/Intro予告✓、leads to exceed、make to decrease、spatial |
 | 3/2 | Task 1 初回 | 6.0 | 6.0 | 5.5 | 5.5 | **5.5–6.0** | visitor(s)、thousand、after→over、at a pace、数値言い換え→word-bank |
 | 3/2 | Task 1 リライト | 5.5–6.0 | 6.0 | 5.5–6.0 | 5.5 | **5.5–6.0** | Museum C 年と数値の誤り(15→2015,20→2017)、thousands、musuems、SVA |
+| 3/3 | Task 2 初回 | 6.0–6.5 | 6.0–6.5 | 5.5–6.0 | 5.5 | **5.75–6.0** | 語数約355（目標280）、冠詞・スペル・間接疑問文・alternated/minor、論理1箇所(can→cannot) |
 | | | | | | | | |
 
 ---

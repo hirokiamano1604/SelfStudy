@@ -57,6 +57,23 @@
 | experienced a marginal rise | わずかな増加 |
 | **倍数「〜倍に増えた」** | **increased 1.5-fold** / **rose to 1.5 times the 2010 figure** / **was 1.5 times that of 2010**。~~incremented 1.5 times~~ は不可（increment＝一定量を足す動詞）。名詞なら a 1.5-fold increase |
 
+### 増加の名詞（言い換え用・Task 1 で回す）
+| 名詞 | ニュアンス | コロケーション・例文 |
+|------|------------|----------------------|
+| **increase** | 最も汎用。数・割合・量の増加。 | **an** increase **of** 27 percentage points / **an** increase **in** the figure **from** 42% **to** 81% |
+| **rise** | increase とほぼ同義。やや口語寄り。 | **a** rise **of** 39 points / **a** sharp rise **in** internet access |
+| **growth** | 成長・伸び。長期的な増加に使いやすい。 | **a** growth **of** 10% / **a** period of strong growth |
+| **gain** | 得た分・プラス分。増加幅を強調。 | **a** gain **of** 27 points / **a** significant gain |
+| **surge** | 急激な増加。 | **a** surge **in** demand / **a** surge **of** 20% |
+| **climb** | じりじり上がるイメージ。 | **a** steady climb **from** 28% **to** 64% |
+| **upturn** | 景気・トレンドが「上向きになった」こと。 | **an** upturn **in** the figure / **an** upturn **in** household access |
+| **jump** | ぽんと跳ね上がる増加。 | **a** jump **of** 15 points / **a** sharp jump |
+| **expansion** | 規模が広がる・拡大。 | **an** expansion **in** internet use / **an** expansion **of** 30% |
+| **rise**（動詞の名詞化） | the figure **rose** → **the rise** in the figure | **the** rise **was** 27 percentage points |
+
+**冠詞**: いずれも可算なので「ひとつの増加」なら **an** increase / **a** rise / **a** gain など。**of X** で増加幅、**in Y** で何が増えたかを書く。
+**例**: Country A saw **a** sharp **increase** of 39 percentage points. / **The** **rise** in the figure for Country B was the largest among the three.
+
 ### 減少
 | 表現 | ニュアンス |
 |---|---|
@@ -385,6 +402,27 @@
 | **minor languages** | minor＝未成年の | **minority languages**（少数言語） |
 | **additional helps** | help は不可算 | **additional help** |
 
+### 2026-03-04（Task 1）
+
+| 自分が書いた表現 | 問題点 | 正しい表現 |
+|---|---|---|
+| **Consecuently** | スペル | **Consequently** |
+| the figure **of** country A | 前置詞 | the figure **for** Country A |
+| after the 10 years from 2010 | 期間の言い方 | **over the 10-year period** / **between 2010 and 2020** |
+| the ranges of rising depend | 不自然・時制 | the **extent of the increase** **varied** across the three countries |
+| the ratio of **incrementation** | 語選択 | the **rate of increase** / **growth rate** |
+| **it grew up to 27%** | 増加幅と値を混同（Cは58%→85%） | **it increased by 27 percentage points** / it rose to 85%, an increase of 27 pp |
+| Having **share** of 58% | 冠詞 | Having **a share** of 58% |
+
+### 2026-03-04 Task 1 リライトでまだ出た誤り
+| 自分が書いた表現 | 問題点 | 正しい表現 |
+|---|---|---|
+| Detail 1: country **C** 28%→64% | 28→64 は **Country B**。58→85 が C | Detail 1 = A・B、Detail 2 = C。国と数値を照合 |
+| **countires** | スペル | **countries** |
+| **thoughout** | スペル | **throughout** |
+| **significent** | スペル | **significant** |
+| an increase by 27**%** | 増加幅はポイントで明示 | an increase **of** 27 **percentage points** |
+
 ### 2026-03-01 Task 2 リライトでまだ出た誤り
 
 | 自分が書いた表現 | 問題点 | 正しい表現 |
@@ -478,5 +516,12 @@
 | **Irish** language | アイルランドの（Ireland は国名） | FBから |
 | **replace** X **by** Y | 置き換える（alternate＝交互にする） | FBから |
 | **minority** languages | 少数言語（minor＝未成年の） | FBから |
+
+### 追加日: 2026-03-04（Task 1）
+| 表現 | 意味・用途 | 出典 |
+|---|---|---|
+| **increased by X percentage points** | 割合が X ポイント増えた（値が X% になった、ではない） | FBから — 要暗記 |
+| the figure **for** Country X | 国・カテゴリの数値は for（of ではない） | FBから |
+| **the extent of the increase** | 増加の幅・程度（the range of rising は不自然） | FBから |
 
 <!-- 以下、練習のたびに上のセクションをコピーして日付を更新し、追記していく -->

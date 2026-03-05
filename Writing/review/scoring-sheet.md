@@ -114,6 +114,8 @@
 | 3/2 | Task 1 初回 | 6.0 | 6.0 | 5.5 | 5.5 | **5.5–6.0** | visitor(s)、thousand、after→over、at a pace、数値言い換え→word-bank |
 | 3/2 | Task 1 リライト | 5.5–6.0 | 6.0 | 5.5–6.0 | 5.5 | **5.5–6.0** | Museum C 年と数値の誤り(15→2015,20→2017)、thousands、musuems、SVA |
 | 3/3 | Task 2 初回 | 6.0–6.5 | 6.0–6.5 | 5.5–6.0 | 5.5 | **5.75–6.0** | 語数約355（目標280）、冠詞・スペル・間接疑問文・alternated/minor、論理1箇所(can→cannot) |
+| 3/4 | Task 1 初回 | 5.5–6.0 | 6.0–6.5 | 5.5–6.0 | 5.5–6.0 | **5.75–6.0** | grew up to 27%→increased by 27pp、冠詞・Consecuently・figure for、語数約195 |
+| 3/4 | Task 1 リライト | 5.5 | 6.0–6.5 | 5.5–6.0 | 5.5–6.0 | **5.75–6.0** | Detail1でB/C取り違え(28→64はB)、extent varied◎、countires/thoughout/significent |
 | | | | | | | | |
 
 ---
@@ -140,3 +142,4 @@
 | **the + 固有名詞** | the country A → Country A | 7回（2/24初）→ **2/24Reで修正済み ✓** | Tokyo に the をつけないのと同じ |
 | **データ誤読** | Country B Industry 45%→40%と記載 | 2回（2/24Re） | 数字を書いたら必ず元データと照合 |
 | **Task 1 で主観表現** | "It is interesting that" | 1回（2/24添削）| Notably / It is worth noting で代替 |
+| **増加幅 vs 値の混同** | grew up to 27%（値が27%になった） | 1回（3/4） | increased by 27 percentage points（27ポイント増えた） |

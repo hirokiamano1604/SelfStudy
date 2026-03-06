@@ -116,6 +116,8 @@
 | 3/3 | Task 2 初回 | 6.0–6.5 | 6.0–6.5 | 5.5–6.0 | 5.5 | **5.75–6.0** | 語数約355（目標280）、冠詞・スペル・間接疑問文・alternated/minor、論理1箇所(can→cannot) |
 | 3/4 | Task 1 初回 | 5.5–6.0 | 6.0–6.5 | 5.5–6.0 | 5.5–6.0 | **5.75–6.0** | grew up to 27%→increased by 27pp、冠詞・Consecuently・figure for、語数約195 |
 | 3/4 | Task 1 リライト | 5.5 | 6.0–6.5 | 5.5–6.0 | 5.5–6.0 | **5.75–6.0** | Detail1でB/C取り違え(28→64はB)、extent varied◎、countires/thoughout/significent |
+| 3/5 | Task 2 初回 | 6.0–6.5 | 6.0–6.5 | 5.5–6.0 | 5.5 | **5.75–6.0** | suggest 人to do不可、which encourages、give birth・reaction to・investment in、冠詞・vene |
+| 3/5 | Task 2 リライト | 6.0–6.5 | 6.0–6.5 | 5.5–6.0 | 5.5–6.0 | **6.0** | suggest that◎、investment in◎、スペル複数(governement,birth等)、it improves、consider+ing |
 | | | | | | | | |
 
 ---

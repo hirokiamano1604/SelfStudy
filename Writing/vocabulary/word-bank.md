@@ -18,6 +18,27 @@
 | A contentious issue in contemporary society is... | 議論のある話題 | A contentious issue in contemporary society is whether governments should regulate social media. |
 | This essay will argue that... | 立場の明示 | This essay will argue that the benefits outweigh the drawbacks. |
 
+### 「人々がこう言っている」の言い換え（Intro で Some people... / Others... の動詞）
+| 動詞・表現 | ニュアンス | 例文 |
+|------------|------------|------|
+| **claim** | 主張する（やや強い）。that 節をとる。 | Some people **claim** that the government should provide free childcare. |
+| **state** | 述べる（中立的・フォーマル）。 | Others **state** that parents should pay for it themselves. |
+| **argue** | 論じる・主張する（理由づけのニュアンス）。 | Some **argue** that free childcare would raise the birth rate. |
+| **believe** | 信じる・考えている。 | Many people **believe** that education should be free. |
+| **think** | 思う（ややカジュアルだが問題なし）。 | Others **think** that users should pay. |
+| **hold the view that** | 〜という見解を持つ（フォーマル）。 | Some **hold the view that** the policy is wasteful. |
+| **maintain that** | 〜と主張し続ける（堅い）。 | Critics **maintain that** the budget could be used elsewhere. |
+| **contend that** | 〜と主張する（論争的）。 | Some **contend that** only parents are responsible. |
+| **suggest** | 示唆する・提案する（やや弱い主張）。 | Others **suggest** that the private sector should fund it. |
+| **feel that** | 〜と感じている（主観的）。 | Many **feel that** the government has a duty to help. |
+
+**主語の言い換え**: Some people / Others → **Critics** / **Supporters** / **Some** / **Others** / **Many people** / **Those who oppose this** / **Advocates of this view**
+
+**組み合わせ例**:  
+*Some people **claim** that X, while others **argue** that Y.*  
+*Supporters **believe** that X; critics **maintain** that Y.*  
+*Many **hold the view that** X, whereas others **state** that Y.*
+
 ### Body — 主張・展開
 | 表現 | 用途 |
 |---|---|
@@ -414,6 +435,19 @@
 | **it grew up to 27%** | 増加幅と値を混同（Cは58%→85%） | **it increased by 27 percentage points** / it rose to 85%, an increase of 27 pp |
 | Having **share** of 58% | 冠詞 | Having **a share** of 58% |
 
+### 2026-03-05（Task 2）
+
+| 自分が書いた表現 | 問題点 | 正しい表現 |
+|---|---|---|
+| **suggest the working parents to pay** | suggest は suggest that SV | **suggest that working parents (should) pay** |
+| which **encourage** | SVA（先行詞は opinion 単数） | which **encourages** |
+| **give a birth** | 慣用で無冠詞 | **give birth** |
+| **the local** | 不自然 | **the local community** / **local communities** |
+| **reactions for** | コロケーション | **reactions to** |
+| **investment for** | コロケーション | **investment in** |
+| **for elderly** | 定形 | **for the elderly** |
+| **vene** if | スペル | **even** if |
+
 ### 2026-03-04 Task 1 リライトでまだ出た誤り
 | 自分が書いた表現 | 問題点 | 正しい表現 |
 |---|---|---|
@@ -523,5 +557,17 @@
 | **increased by X percentage points** | 割合が X ポイント増えた（値が X% になった、ではない） | FBから — 要暗記 |
 | the figure **for** Country X | 国・カテゴリの数値は for（of ではない） | FBから |
 | **the extent of the increase** | 増加の幅・程度（the range of rising は不自然） | FBから |
+
+### 追加日: 2026-03-05（Task 2）
+| 表現 | 意味・用途 | 出典 |
+|---|---|---|
+| **suggest that** SV / **suggest** 人**'s** 動名詞 | 提案する（suggest 人 to do は不可） | FBから — 要暗記 |
+| **give birth** | 出産する（無冠詞。give a birth ✗） | FBから |
+| **reaction to** X | 〜への反応（reaction for ✗） | FBから |
+| **investment in** X | 〜への投資（investment for ✗） | FBから |
+| **the elderly** | 高齢者（elderly だけでは不可） | FBから |
+| **consider + 動名詞** | consider giving birth（considering to は不可） | 3/5 リライト FBから |
+| **effective in** doing | 〜するのに効果的（effective to do は不可） | 3/5 リライト FBから |
+| **raise** / **bring up** children | 子どもを育てる（foster＝里親で育てる） | 3/5 リライト FBから |
 
 <!-- 以下、練習のたびに上のセクションをコピーして日付を更新し、追記していく -->
